@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for file in *; do
+  des_dir="/alx-system_engineering-devops/0x02-shell_redirections"
+  if [ ! -e "$des_file" ]; then
+    mv "$file" "$des_dir"
+    echo "Moved file: $file"
+  else
+    echo "File already exit: $file"
+  fi
+done
